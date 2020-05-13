@@ -1,0 +1,117 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "hidemode 3"
+			"$columnConstraints": "[fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill]"
+			"$rowConstraints": "[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"background": new java.awt.Color( 51, 51, 51, 255 )
+			"title": "clear05 --by zk"
+			"undecorated": true
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "closeButton"
+				"text": "关闭"
+				"background": new java.awt.Color( 102, 204, 255, 255 )
+				"focusPainted": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "closeButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 38 0 1 3"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "clearAllButton"
+				"text": "一键清除"
+				"focusPainted": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "clearAllButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 10 7 18 1"
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "dayClearCheckBox"
+				"text": "僵尸粉清除"
+				"opaque": false
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 10 11 4 3"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "dayTextField"
+				"text": "15"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 17 10 11 4"
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "multipleCheckBox"
+				"text": "一机多号清除"
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"opaque": false
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 10 16 7 3"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "multipleTextField"
+				"text": "3"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 17 15 11 4"
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "partnerCheckBox"
+				"text": "合伙人清除"
+				"opaque": false
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 10 21 7 4"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "partnerTextField"
+				"text": "348"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 17 21 11 3"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "exportButton"
+				"text": "导出勾选数据"
+				"preferredSize": new java.awt.Dimension( 82, 30 )
+				"focusPainted": false
+				"maximumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"minimumSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exportButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 10 30 18 1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "clearChooseButton"
+				"text": "勾选清除"
+				"foreground": &Color0 new java.awt.Color( 51, 51, 51, 255 )
+				"focusPainted": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "clearChooseButton1ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 10 35 18 1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "recoverButton"
+				"text": "恢复数据"
+				"foreground": #Color0
+				"focusPainted": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "recoverButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 10 40 18 1"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "vanishButton"
+				"text": "删除用户数据"
+				"focusPainted": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "vanishButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 10 44 18 1"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 45, 65 )
+			"size": new java.awt.Dimension( 520, 595 )
+		} )
+	}
+}

@@ -1,0 +1,47 @@
+JFDML JFormDesigner: "7.0.1.0.272" Java: "11.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "hidemode 3"
+			"$columnConstraints": "[fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill][fill]"
+			"$rowConstraints": "[][][][][][][][][][][][][][][][][][][][]"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 2
+			"title": "删除用户数据"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "userIdTextField"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 4 5 19 3"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "delByIdButton"
+				"text": "通过用户id-删除"
+				"focusPainted": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "delByIdButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 23 5 10 3"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "fileNamelabel"
+				"text": "文件路径"
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 4 9 19 3"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "delByFileButton"
+				"text": "通过导入数据-删除"
+				"focusPainted": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "delByFileButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 23 9 10 3"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1030, 605 )
+		} )
+	}
+}
